@@ -1,7 +1,7 @@
 const userCardTemplate = document.querySelector("[data-user-template]");
 const userCardContainer = document.querySelector("[data-user-cards-container]");
 
-fetch("users.json")
+fetch("./api/users.json")
   .then((res) => res.json())
   .then((data) => {
     data.forEach((user) => {
